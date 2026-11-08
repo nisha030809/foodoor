@@ -1,0 +1,29 @@
+{
+  "name": "foodoor",
+  "version": "2.0.0",
+  "description": "FOODOOR – AI-Powered Cloud Kitchen Management & Food Delivery Platform",
+  "type": "module",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "start:all": "node scripts/start-all.js",
+    "dev": "node scripts/start-all.js",
+    "dev:node": "node server/server.js",
+    "ai:server": "python ai_engine/server.py",
+    "ai:forecast": "python ai_engine/demand_forecaster.py",
+    "ai:recommender": "python ai_engine/recommender.py",
+    "ai:inventory": "python ai_engine/inventory_optimizer.py"
+  },
+  "keywords": [
+    "foodoor",
+    "cloud-kitchen",
+    "ai",
+    "food-delivery",
+    "demand-forecasting",
+    "inventory-management",
+    "scikit-learn"
+  ],
+  "author": "FOODOOR Engineering Team",
+  "license": "MIT"
+}
+

@@ -1,0 +1,20 @@
+services:
+  # FOODOOR Full-Stack Service (Node.js Web + Python AI Engine)
+  - type: web
+    name: foodoor-platform
+    env: node
+    plan: starter
+    buildCommand: "pip install -r requirements.txt && npm install"
+    startCommand: "node scripts/start-all.js"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: AI_PORT
+        value: 5001
+      - key: AI_SERVICE_URL
+        value: http://localhost:5001
+      - key: CORS_ORIGIN
+        value: "*"
+
